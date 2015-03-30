@@ -17,9 +17,11 @@ class Secure
         return $arr;
     }
 
+
     public static function sanitize($string)
     {
         return htmlspecialchars($string);
     }
+
 
 }

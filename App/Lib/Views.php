@@ -47,7 +47,11 @@ abstract class Views
         }
     }
 
-    public function setData($key, $value) {
+
+    public function setData($key, $value)
+    {
         $this->data[$key] = $value;
     }
+
+
 }

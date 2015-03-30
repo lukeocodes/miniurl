@@ -18,7 +18,7 @@ class Redirect extends Controllers
     {
         $url = $this->url->getData('url');
         if (!empty($url)) {
-            header("HTTP/1.1 301 Moved Permanently"); 
+            header("HTTP/1.1 301 Moved Permanently");
             header("Location: " . $url);
         }
     }
