@@ -29,7 +29,7 @@ class Main extends Controllers
                 $urlObj->save();
 
                 $this->view = new \App\View\Done();
-                $this->view->setData('urlHash', "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].$urlObj->getHash());
+                $this->view->setData('urlHash', "http://oliff.eu/".$urlObj->getHash());
 
                 $message = '<div class="alert alert-success" role="alert">
           <i class="fa fa-tick"></i> Success!

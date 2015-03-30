@@ -21,7 +21,7 @@ class Redirect extends Controllers
             header("HTTP/1.1 301 Moved Permanently");
             header("Location: " . $url);
         } else {
-            header("Location: .");
+            header("Location: http://oliff.eu/");
         }
     }
 
