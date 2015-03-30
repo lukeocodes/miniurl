@@ -29,7 +29,7 @@ class Main extends Controllers
                 $urlObj->save();
 
                 $this->view = new \App\View\Done();
-                $this->view->setData('urlHash', "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']."?r=".$urlObj->getHash());
+                $this->view->setData('urlHash', "http://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'].$urlObj->getHash());
 
                 $message = '<div class="alert alert-success" role="alert">
           <i class="fa fa-tick"></i> Success!
@@ -44,7 +44,7 @@ class Main extends Controllers
 
         $this->view->setData('url', $url);
         $this->view->setData('message', $message);
-        $this->view->setData('title', 'Miniurl');
+        $this->view->setData('title', 'Oliff.eu - Short URL Service');
     }
 
 

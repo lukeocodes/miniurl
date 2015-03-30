@@ -117,7 +117,9 @@ class Models
 
     public function getData($key)
     {
-        return $this->data[$key];
+        if (isset($this->data[$key])) {
+            return $this->data[$key];
+        }
     }
 
 
