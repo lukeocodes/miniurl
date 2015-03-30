@@ -1,0 +1,9 @@
+CREATE DATABASE miniurl;
+
+USE miniurl;
+
+CREATE TABLE `urls` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `url` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=10000 DEFAULT CHARSET=latin1
